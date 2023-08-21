@@ -1,10 +1,20 @@
 @import "https://fonts.googleapis.com/css?family=Pacifico";
+@import "https://fonts.googleapis.com/css?family=Merriweather+Sans";
 @import "https://fonts.googleapis.com/css?family=Quicksand";
 html, body {
   width: 100vw;
   height: 100vh;
   background-color: #F8F8FF;
   font-family: Quicksand, sans-serif;
+}
+html input::-webkit-outer-spin-button,
+html input::-webkit-inner-spin-button, body input::-webkit-outer-spin-button,
+body input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+html input[type=number], body input[type=number] {
+  -moz-appearance: textfield;
 }
 
 #container {
@@ -51,6 +61,9 @@ html, body {
   margin: 0;
 }
 
+#right {
+  width: 100%;
+}
 #right .first {
   height: 33%;
   display: flex;
@@ -59,10 +72,23 @@ html, body {
 }
 #right .second {
   height: 33%;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+  /*margin-bottom: 1rem;*/
+  background-color: white;
+}
+#right .second .form {
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+#right .second .form form fieldset {
+  border: 0;
+}
+#right .second .form form label {
+  font-family: Merriweather Sans, sans-serif;
+  font-size: 0.5em;
+  font-weight: 900;
+  letter-spacing: 0.1rem;
+  color: #3A3B3C;
 }
 #right .third {
-  height: 33%;
   margin-left: 1rem;
 }/*# sourceMappingURL=style.css.map */
