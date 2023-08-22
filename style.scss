@@ -80,13 +80,13 @@ html, body {
 
 #right {
   width: 100%;
-  .first {
+  #first {
     height: 33%;
     display: flex;
     align-items: flex-end;
     margin-left: 1rem;
   }
-  .second {
+  #second {
     height: 33%;
     /*margin-bottom: 1rem;*/
     background-color: white;
@@ -94,8 +94,12 @@ html, body {
       margin-top: 1rem;
       margin-left: 2rem;
       form {
-        fieldset {
-          border: 0;
+        display: flex;
+        justify-content: space-between;
+        width: 66%;
+        .form-div {
+          display: flex;
+          flex-direction: column;
         }
         label {
           @include labels;
@@ -103,7 +107,7 @@ html, body {
       }
     }
   }
-  .third {
+  #third {
     margin-left: 1rem;
   }
 }
