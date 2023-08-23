@@ -44,7 +44,7 @@ html, body {
       width: 100%;
       display: flex;
       justify-content: center;
-      background-color: rgba(0, 0, 0, 0.3);
+      background-color: rgba(0, 0, 0, 0.5);
       .logo {
         filter: invert(100%) 
                 sepia(100%) 
@@ -86,7 +86,7 @@ html, body {
     box-shadow:rgba(0, 0, 0, 0.24) 0 4px 2px -2px;
     .form {
       width: 66%;
-      margin-top: 2rem;
+      margin-top: 2.5rem;
       margin-left: 2rem;
       form {
         display: flex;
@@ -109,5 +109,18 @@ html, body {
   }
   #third {
     margin-left: 1rem;
+    .submit {
+      padding: 0.5rem 2rem;
+      margin-top: 1.5rem;
+      margin-left: 1rem;
+      background-color: #d1f7ff;
+      border-radius: 4px;
+    }
+    .log-in-text {
+      margin-left: 1rem;
+    }
+    .log-in-url:link {
+      text-decoration: none;
+    }
   }
 }
