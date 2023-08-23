@@ -6,14 +6,6 @@ $logo-font: Pacifico, cursive;
 $label-font: Merriweather Sans, sans-serif;
 $font: Quicksand, sans-serif;
 
-@mixin labels {
-  font-family: $label-font;
-  font-size: 0.5em;
-  font-weight: 900;
-  letter-spacing: 0.1rem;
-  color: #3A3B3C;
-}
-
 html, body {
   width: 100vw;
   height: 100vh;
@@ -84,25 +76,33 @@ html, body {
     height: 33%;
     display: flex;
     align-items: flex-end;
-    margin-left: 1rem;
+    margin-left: 2rem;
+    margin-right: 6rem;
   }
   #second {
     height: 33%;
-    /*margin-bottom: 1rem;*/
+    overflow: auto;
     background-color: white;
+    box-shadow:rgba(0, 0, 0, 0.24) 0 4px 2px -2px;
     .form {
-      margin-top: 1rem;
+      width: 66%;
+      margin-top: 2rem;
       margin-left: 2rem;
       form {
         display: flex;
-        justify-content: space-between;
-        width: 66%;
         .form-div {
           display: flex;
           flex-direction: column;
+          margin-bottom: 1rem;
+          margin-right: 4rem;
         }
         label {
-          @include labels;
+          font-family: $label-font;
+          font-size: 0.5em;
+          font-weight: 900;
+          letter-spacing: 0.1rem;
+          margin-bottom: 0.2rem;
+          color: #3A3B3C;
         }
       }
     }
